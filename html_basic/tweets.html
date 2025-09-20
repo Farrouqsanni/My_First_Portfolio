@@ -2,21 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Tweets Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Tweets</title>
 </head>
 <body>
-    <h1>My Tweets Page</h1>
-    <p>Welcome! Here is an embedded tweet:</p>
 
-    <!-- Example Embedded Tweet -->
-    <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Excited to learn HTML and web development! 🚀 #LearningToCode</p>
-        &mdash; Farrouq Sanni (@FarrouqSanni) 
-        <a href="https://twitter.com/FarrouqSanni/status/1234567890">September 20, 2025</a>
-    </blockquote>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
+    </header>
 
-    <p><a href="index.html">Back to Homepage</a></p>
+    <main>
+        <article>
+            <h1>My Tweets</h1>
+            <!-- Example embedded tweet -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">This is an example tweet!</p>&mdash; YourUsername (@username) 
+                <a href="https://twitter.com/username/status/1234567890">Sep 21, 2025</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Made by Farrouq Sanni - <a href="https://github.com/sannifarrouq" target="_blank">here</a></p>
+    </footer>
+
 </body>
 </html>
 
