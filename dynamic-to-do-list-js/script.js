@@ -7,14 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create the addTask Function
     function addTask() {
-        const taskText = taskInput.value.trim(); // Retrieve and trim input
+        // Retrieve and trim input
+        const taskText = taskInput.value.trim();
 
+        // Check for empty string
         if (taskText === "") {
-            alert("Please enter a task"); // Prevent empty tasks
+            alert("Please enter a task");
             return;
         }
 
-        // Task Creation
+        // Create li element
         const li = document.createElement('li');
         li.textContent = taskText;
 
@@ -23,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
         removeBtn.textContent = "Remove";
         removeBtn.className = "remove-btn";
 
-        // Task Removal
+        // Assign onclick to remove li
         removeBtn.onclick = function () {
             taskList.removeChild(li);
         };
 
-        // Append elements
+        // Append removeBtn to li, and li to taskList
         li.appendChild(removeBtn);
         taskList.appendChild(li);
 
